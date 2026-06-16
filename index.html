@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>110 Days MAANG DSA Prep</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🚀</span>
+                    <h1>110 Days MAANG Prep</h1>
+                </div>
+                <p class="tagline">3 Problems a Day — Master DSA for Top Tech Companies</p>
+            </div>
+        </header>
+
+        <!-- Stats Dashboard -->
+        <section class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">📅</div>
+                    <div class="stat-info">
+                        <span class="stat-value" id="current-day">0</span>
+                        <span class="stat-label">Current Day</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">✅</div>
+                    <div class="stat-info">
+                        <span class="stat-value" id="solved-count">0</span>
+                        <span class="stat-label">Problems Solved</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">📊</div>
+                    <div class="stat-info">
+                        <span class="stat-value" id="total-problems">330</span>
+                        <span class="stat-label">Total Problems</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🔥</div>
+                    <div class="stat-info">
+                        <span class="stat-value" id="streak-count">0</span>
+                        <span class="stat-label">Day Streak</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Progress Bar -->
+            <div class="progress-container">
+                <div class="progress-header">
+                    <span>Overall Progress</span>
+                    <span id="progress-percent">0%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filter/Topic Nav -->
+        <section class="filter-section">
+            <div class="filter-header">
+                <h2>📋 Problem Schedule</h2>
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="pending">Pending</button>
+                    <button class="filter-btn" data-filter="completed">Completed</button>
+                </div>
+            </div>
+            <div class="topic-filters" id="topic-filters"></div>
+        </section>
+
+        <!-- Days Grid -->
+        <section class="days-section" id="days-container"></section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Built for MAANG aspirants 💪 | Progress saved locally in your browser</p>
+        </footer>
+    </div>
+
+    <script src="problems.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
